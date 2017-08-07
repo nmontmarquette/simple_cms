@@ -14,4 +14,10 @@ class DemoController < ApplicationController
   def hello_new
     render ('hello_new')
   end
+
+  def google
+    #render ('hello_new')
+    redirect_to('https://www.google.com')
+  end
+
 end

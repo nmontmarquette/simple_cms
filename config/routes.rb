@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'demo/hello'
   get 'demo/index'
   get 'demo/hello_new'
+  get 'demo/google'
 
   # Default roule, may go ahead in the future
   #get ':controller(/:action(/:id))'
