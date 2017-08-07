@@ -7,12 +7,11 @@ class DemoController < ApplicationController
   end
 
   def hello
-    #render ('demo/index')
-    
-    # We're already in the 'Demo' controller no need to specify
-    #render ('demo/hello')
-    render ('hello')
+    #redirect_to(:controller =>'demo', :action =>'hello_new')
+    redirect_to(:action =>'hello_new')
   end
 
+  def hello_new
+    render ('hello_new')
   end
 end
