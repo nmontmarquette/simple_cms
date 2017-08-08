@@ -12,6 +12,7 @@ class DemoController < ApplicationController
   end
 
   def hello_new
+    @array = ['Nicolas','Ben','Bob','Bobby']
     render ('hello_new')
   end
 
