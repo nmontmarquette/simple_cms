@@ -1,1 +1,5 @@
-<h1>This is the main home page.</h1>
+<h1>This is the home page.</h1>
+<a href="/demo/hello">Hello Page [Link 1]<a/><br/>
+<%= link_to('Hello Page [Link 2]', 'demo/hello') %><br/>
+<%= link_to('Hello Page [Link 3]---won\'t work', 'demo/hello') %><br/>
+<%= link_to('Hello Page [Link 4]',{:action => 'hello'}) %><br/>
