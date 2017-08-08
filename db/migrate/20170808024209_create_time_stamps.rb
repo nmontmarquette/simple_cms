@@ -9,9 +9,9 @@ class CreateTimeStamps < ActiveRecord::Migration[5.0]
       #t.datetime "created_at"
       #t.datetime "updated_at"
     end
+  end
 
-    def down
-      drop_table :time_stamps
-    end
+  def down
+    drop_table "time_stamps"
   end
 end
