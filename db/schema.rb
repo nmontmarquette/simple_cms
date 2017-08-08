@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170808024209) do
+ActiveRecord::Schema.define(version: 20170808032417) do
 
-  create_table "time_stamps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "spatio_temporal_markers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.float    "longitude",  limit: 24
     t.float    "latitude",   limit: 24
     t.datetime "time_stamp",            null: false
+    t.float    "altitude",   limit: 24
   end
 
 end
