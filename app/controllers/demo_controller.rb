@@ -13,6 +13,8 @@ class DemoController < ApplicationController
 
   def hello_new
     @array = ['Nicolas','Ben','Bob','Bobby']
+    @page = params[:page].to_i
+    @nid = params[:id]
     render ('hello_new')
   end
 
